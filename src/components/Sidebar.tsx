@@ -31,7 +31,17 @@ const Sidebar = () => {
                 Cronograma de Aulas
             </span>
             <div className="flex flex-col gap-8">
-                <Lesson />
+                {data?.lessons.map(lesson => {
+                    return (
+                        <Lesson
+                            key={lesson.id}
+                            title={lesson.title}
+                            slug={lesson.slug}
+                            availableAt={new Date(lesson.availableAt)}
+                            type={lesson.lessonType}
+                        />
+                    )
+                })}
             </div>
         </aside>
     )
