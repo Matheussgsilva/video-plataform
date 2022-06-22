@@ -11,7 +11,7 @@ const Lesson = (props: LessonProps) => {
     const isLessonAvailable = false
 
     return (
-        <a href="#">
+        <a href={`${props.slug}`}>
             <span className="text-gray-300">
                {props.availableAt.toString()}
             </span>
