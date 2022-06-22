@@ -1,6 +1,8 @@
+import Header from "../components/Header"
+
 const Event = () => {
     return (
-        <h1>Event</h1>
+        <Header />
     )
 }
 
