@@ -45,8 +45,8 @@ const Video = (props: VideoProps) => {
 
     if (!data) {
         return (
-            <div className="flex-1">
-                <p>Caregando...</p>
+            <div className="flex flex-1 justify-center items-center">
+                <p className="text-2xl">Carregando...</p>
             </div>
         )
     }
